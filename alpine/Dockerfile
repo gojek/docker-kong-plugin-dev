@@ -5,3 +5,4 @@ ADD . /kong-dev
 RUN apk add build-base zip bash
 RUN luarocks install busted
 ENV PATH=/kong-dev/bin:/usr/local/openresty/luajit/bin:/usr/local/openresty/bin:$PATH
+WORKDIR /code
